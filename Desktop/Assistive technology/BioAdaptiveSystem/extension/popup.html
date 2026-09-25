@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <header>
+            <div className="logo">
+                <img src="logo.png" alt="BioAdaptive" width="24" height="24" style="margin-right: 8px;" />
+                <span>BioAdaptive Control</span>
+            </div>
+        </header>
+
+        <section class="score-section">
+            <h3 id="modeTitle">Current Fatigue</h3>
+            <div class="score-circle" id="scoreCircle">
+                <span id="scoreValue">--</span>
+            </div>
+            <p id="focusStatus" class="status-normal">Focus: Measuring...</p>
+        </section>
+
+        <section class="controls-section">
+            <div class="setting-row">
+                <div class="setting-info">
+                    <h4>Privacy Mode</h4>
+                    <p>Disable camera, use behavioral signals</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="privacyToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Active Alterations:</strong></p>
+                <ul id="alterationsList">
+                    <li>None</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <button id="openAppBtn" class="link-btn">Open Main Dashboard</button>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
